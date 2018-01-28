@@ -29,14 +29,14 @@ So we don't have a way to do this direct so you you need to do is load it with `
 No because it would be agents their ToS (Terms of Service). If you see any bot that does play Spotify playlists they either break Spotify ToS, or get the info on the song then get the song from Youtube. We may do this in the future but have no plans as of now.
 
 #### How Can I Turn Of Skip Voting
-You can't. If you want to skip without a vote you can do `_skip force`. If you want everyone to be able to do this you can add the `flarebot.skip.force` permission to the `Default` group. Go to the [Permissions page](/docs/permissions) for info on this.
+You can't. If you want to skip without a vote you can do `_skip force`. If you want everyone to be able to do this you can add the `flarebot.skip.force` permission to the `Default` group. Go to the [Permissions page](/permissions) for info on this.
 
 #### Can I Change The Volume
 Nope, because of similar reasons to why you can't keep the bot in a voice channel. Sadly it is not a light task to decode the audio, change volume and re-encode all the time. 
 
 ## Moderation Questions
 #### How Do I Add X Perm To Someone
-Take a look at our [Permissions page](/docs/permissions)!
+Take a look at our [Permissions page](/permissions)!
 
 #### Why Won't Selfassign/Autoassign Let Me Add A Role
 High chances are it's because the role your trying to add is above the highest role Flarebot has. To fix this simply go into your server setting and move the FlareBot role up above the highest role you want to selfassign/autoassign.
@@ -53,4 +53,4 @@ Have you been reading the last questions? Just quickly glance through those and 
 #### How Do I Self Host FlareBot
 Short answer: You don't.
 Long answer:
-So FalreBot is open source and always will be. You can find it's code [here](https://github.com/FlareBot/FlareBot). That's the best I can give you. FlareBot has quite a few moving parts and quite a bit of required data needed to run including a Cassandra Cluster. Instead of creating quite complex self-hosting instructions which we'd need to maintain and help people with we instead just do not support it. We spend quite a bit of money to make sure FlareBot can run smoothly and for free to all our users. We run out of pocket and on the generous donations of our users. If you wish to donate then you can help us improve hardware and maybe you wont need to self-host :) For information on donating go [here](/docs/donate).
+So FalreBot is open source and always will be. You can find it's code [here](https://github.com/FlareBot/FlareBot). That's the best I can give you. FlareBot has quite a few moving parts and quite a bit of required data needed to run including a Cassandra Cluster. Instead of creating quite complex self-hosting instructions which we'd need to maintain and help people with we instead just do not support it. We spend quite a bit of money to make sure FlareBot can run smoothly and for free to all our users. We run out of pocket and on the generous donations of our users. If you wish to donate then you can help us improve hardware and maybe you wont need to self-host :) For information on donating go [here](/donate).
