@@ -1,11 +1,11 @@
 # Welcome to FlareBot Docs
-FlareBot is a free Discord music and server administration bot that delivers high-quality music to your Discord server while also providing tools to run your server with ease. FlareBot can be easily added into your Discord server with no setup or configuration.
+FlareBot is a free Discord music and server administration bot that delivers high-quality music to your Discord server while also providing tools to run your server with ease. FlareBot can be easily added into your Discord server with no setup or configuration required.
 
 ## Setting up the bot
 FlareBot is made to be super simple to use! Getting FlareBot running on your server is easy, you can invite FlareBot by authenticating it with using [this](https://goo.gl/NfYi94) link. Bear in mind that you must have `Manage Server` permissions to be able to do this. From there you are good to go with being able to use music and moderators should be able to use any moderation commands they need. We have a very flexible permission system which you can also use to limit what certain users can do, check it out [here](/docs/permissions).
 
 ## Main Commands
-> Note that if you changed the prefix from `_` then you will need to use your server prefix. You can check your prefix with `_prefix`
+> Note that if you changed the prefix from `_` then you will need to use your server prefix. You can check your prefix with `_prefix` or mentioning the bot.
 > You can also do `_help` for a list of all the commands (You have access to) in your server!
 
 > Key: 
@@ -36,20 +36,6 @@ _play Alan Walker - Faded
 _play https://www.youtube.com/watch?v=60ItHLz5WEA
 ```
 You can search for a term which in this case is `Alan Walker - Faded` or directly by a URL which above is `_play https://www.youtube.com/watch?v=60ItHLz5WEA`.
-
-<!---
-You can also use `_search` and get the top 5 results related to your term. For example:
-```
-Please select a track with the ';;play 1-5' command:
-1: Rick Astley - Never Gonna Give You Up (03:33)
-2: YOUTUBERS REACT TO RICKROLL (Ep. #5) (09:20)
-3: I Rick Roll My Entire Chemistry Class! (05:55)
-4: The New Rick Roll! (04:26)
-5: Melania Trump's RNC RICKROLL (00:19)
-```
-
-You can then choose your track by clicking on the reactions on the message or with `_play <number>` command.
--->
 
 > FlareBot will not be able to play tracks blocked in France (usually due to copyright infringements on YouTube).
 
