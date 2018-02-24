@@ -1,13 +1,20 @@
 # Permissions
 
-<!-- > ### In 4.2 permissions are changing! Please read the `Permissions (4.2)` page for more info! -->
+## Version 4.2 permissions changes
+In version 4.2 we have changed the permissions system to be, we believe, better. Here are some changes:
+* There is no longer a default group. We have replaced this with a dynamic system that means that users get default permissions without a group. To list all of the default permissions, please refer to the `_perms list` command!
+* We have introduced negation permissions meaning by putting a `-` before a permission will **deny** users access to the permission. This works in terms of group hierarchy; groups at the top will override groups at the bottom. User permissions will also immediately override group permissions.
+* As mentioned before, groups now follow a hierarchy (Groups at the top being more important). To allow for this order to be changed we have introduced the command `_perms group <group> move <position>` to move the group up and down the chain. This order can bee seen by doing `_perms groups`!
+* We have finally added the ability to do full and accurate permission validation meaning you will never be mistake on a permission again!
+
 
 ## Important Notes
-* All FlareBot permissions follow a pattern of `flarebot.command` and `flarebot.command.sub-command` if applicable. 
+* All FlareBot permissions follow a pattern of `flarebot.command` and `flarebot.command.sub-command` if applicable.
+* All the permissions can be listed with `_perms list`. This command also tells you if the permissions are default or not.
 * Everyone with `Administrator` Discord permission will have access to **all** commands.
-* Everyone already has a group before you do anything, the group is called `Default`.
+* Everyone already has a select group of permissions to start off with. These are listed in the "Default" section of `_perms list`! To remove these permissions simply add the permission with a `-` before it to a user!
 * The `*` and `flarebot.*` permissions will grant **all** permissions, use it wisely!
-* To find a command permission you can either see it on the commands page or do `_usage <command>` on Discord and it will show it in the response. Note that you cannot find sub-command permissions easily!
+* To find a command permission you can either see it on the commands page or do `_usage <command>` on Discord and it will show it in the response. All permissions can be viewed at `_perms list`.
 
 ## Some basic starter commands
 If you wish to get going quickly these commands will be good to know!<br/>
@@ -16,7 +23,8 @@ If you wish to get going quickly these commands will be good to know!<br/>
 `_perms group <name> link <role>` - This is how you can link a group to a specific Discord role. More info [here](#group-linking)<br/>
 
 ## Groups
-FlareBot doesn't go directly off roles, we instead use something called "groups", these groups can be given to a user and control which permissions people have. There is one group right off the bat which is called `Default` this is a group everyone has and every new person will get. If you wish to remove a permission from everyone then removing it from the `Default` group is the best way to go.<br/>
+FlareBot doesn't go directly off roles, we instead use something called "groups", these groups can be given to a user and control which permissions people have.<br/>
+
 You can create a new group with `_perms group <name> create` for example `_perms group Muted create`.<br/>
 You can delete a group with `_perms group <name> delete` for example `_perms group Muted delete`.<br/>
 
@@ -31,3 +39,5 @@ You can remove a permission by simply doing the command `_perms group <name> rem
 
 ## Group linking
 Group linking is basically linking a group to a role, this allows for you to add a role to a user __without__ them needing to have the group also added to them. It is a nice way to give a whole bunch of people certain permissions. Let's say we want to assign our `Muted` group to the `Muted` Discord role (which can be created by FlareBot in case of mutes). We can simply do `_perms group Muted link @Muted`, now here we can either mention the muted role or use the role ID (Which can be found in the `_roles` command).
+
+## Users
