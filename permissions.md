@@ -37,7 +37,21 @@ You can add a permission by simply doing the command `_perms group <name> add <p
 ### Removing a permission
 You can remove a permission by simply doing the command `_perms group <name> remove <permission>` for example if we want to remove the ability to queue songs from Muted users then we could do `_perms group Muted remove flarebot.play`.
 
-## Group linking
+### Group linking
 Group linking is basically linking a group to a role, this allows for you to add a role to a user __without__ them needing to have the group also added to them. It is a nice way to give a whole bunch of people certain permissions. Let's say we want to assign our `Muted` group to the `Muted` Discord role (which can be created by FlareBot in case of mutes). We can simply do `_perms group Muted link @Muted`, now here we can either mention the muted role or use the role ID (Which can be found in the `_roles` command).
 
 ## Users
+Users can be given their own permissions individually from groups! These permissions will **always** overwrite group permissions so keep that in mind when checking issues with a permissions setup. Aside from their own permissions, users can also be assigned groups based on roles or manually adding the roles.
+
+For adding groups with roles simply link the group with a role (As shown above) and the user will have access to that groups permissions without any further actions!
+
+To add or remove groups from a user simply use `_perms user <user> group add|remove <group>` to add or remove a group from a user.
+
+### User permissions
+Adding and removing permissions is as simple as doing `_perms user <user> permission add|remove <perm>`! If you have trouble adding a permission, 
+remember that you can view all our permissions at any time by doing `_perms list`. To remove *all* permissions from a user you can do `_perms user <user> clear` at anytime!
+
+To list the permissions a specific user has been given, use the command `_perms user <user> permission list`! This will present a list of the permissions a user has been given. **Keep in mind that this is the list of permissions not gained from groups!**
+
+To check the full list of permissions a user has access to, you can use the command `_perms user <user> check` which will list all the permissions (From groups and the user themselves) that they have access to. 
+
