@@ -12,7 +12,7 @@ In version 4.2 we have changed the permissions system to be, we believe, better.
 * All FlareBot permissions follow a pattern of `flarebot.command` and `flarebot.command.sub-command` if applicable.
 * All the permissions can be listed with `_perms list`. This command also tells you if the permissions are default or not.
 * Everyone with `Administrator` Discord permission will have access to **all** commands.
-* Everyone already has a select group of permissions to start off with. These are listed in the "Default" section of `_perms list`! To remove these permissions simply add the permission with a `-` before it to a user! (There should be no space between the `-` and the permission i.e. `-flarebot.stop`)
+* Everyone already has a select group of permissions to start off with. These are listed in the "Default" section of `_perms list`! To remove these permissions simply add the permission with a `-` before it to a user through user permissions or groups! (There should be no space between the `-` and the permission i.e. `-flarebot.play`)
 * The `*` and `flarebot.*` permissions will grant **all** permissions, use it wisely!
 * To find a command permission you can either see it on the commands page or do `_usage <command>` on Discord and it will show it in the response. All permissions can be viewed at `_perms list`.
 
