@@ -23,7 +23,7 @@ If you wish to get going quickly these commands will be good to know!<br/>
 `_perms group <name> link <role>` - This is how you can link a group to a specific Discord role. More info [here](#group-linking)<br/>
 
 ## Groups
-FlareBot doesn't go directly off roles, we instead use something called "groups", these groups can be given to a user and control which permissions people have.<br/>
+FlareBot doesn't go directly off roles, we instead use something called "groups", these groups can be given to a user and control which permissions people have. Negative permissions can be added to groups to negate default permissions or permissions from groups below it.<br/>
 
 You can create a new group with `_perms group <name> create` for example `_perms group Muted create`.<br/>
 You can delete a group with `_perms group <name> delete` for example `_perms group Muted delete`.<br/>
@@ -48,8 +48,7 @@ For adding groups with roles simply link the group with a role (As shown above) 
 To add or remove groups from a user simply use `_perms user <user> group add|remove <group>` to add or remove a group from a user.
 
 ### User permissions
-Adding and removing permissions is as simple as doing `_perms user <user> permission add|remove <perm>`! If you have trouble adding a permission, 
-remember that you can view all our permissions at any time by doing `_perms list`. To remove *all* permissions from a user you can do `_perms user <user> clear` at anytime!
+Adding and removing permissions is as simple as doing `_perms user <user> permission add|remove <perm>`! If you have trouble adding a permission, remember that you can view all our permissions at any time by doing `_perms list`. To remove *all* permissions from a user you can do `_perms user <user> clear` at anytime!
 
 To list the permissions a specific user has been given, use the command `_perms user <user> permission list`! This will present a list of the permissions a user has been given. **Keep in mind that this is the list of permissions not gained from groups!**
 
