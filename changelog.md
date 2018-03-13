@@ -1,4 +1,4 @@
-﻿# 4.2 the cleanup update
+# 4.2 the cleanup update
 ## Changes
   - Lots of back-end work (more info below)
   - Permissions
