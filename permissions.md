@@ -1,4 +1,4 @@
-# Permissions
+﻿# Permissions
 
 ## Version 4.2 permissions changes
 In version 4.2 we have changed the permissions system to be, we believe, better. Here are some changes:
@@ -6,6 +6,7 @@ In version 4.2 we have changed the permissions system to be, we believe, better.
 * We have introduced negation permissions meaning by putting a `-` before a permission will **deny** users access to the permission. This works in terms of group hierarchy; groups at the top will override groups at the bottom. User permissions will also immediately override group permissions.
 * As mentioned before, groups now follow a hierarchy (Groups at the top being more important). To allow for this order to be changed we have introduced the command `_perms group <group> move <position>` to move the group up and down the chain. This order can bee seen by doing `_perms groups`!
 * We have finally added the ability to do full and accurate permission validation meaning you will never be mistake on a permission again!
+* Added group cloning and renaming. Cloning copies the group and all it's perms (Doesn't copy users) to make similar groups easier. To clone a group just do `_permissions group <group> clone <new_group>` and to rename just do `_permissions group <group> rename <new_name>`
 
 
 ## Important Notes
