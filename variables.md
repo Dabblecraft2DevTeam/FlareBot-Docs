@@ -19,7 +19,7 @@ To kick things off, these are variables people are quite used to but they are no
   * `{tag}` - User's name and discrim in tag format - Username#discrim.
   * `{mention}` - User mention.
   * `{user_id}` - User's ID.
-  *
+
 <hr />
 
 ## Guild Variables
