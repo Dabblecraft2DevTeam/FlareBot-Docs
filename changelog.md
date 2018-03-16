@@ -14,13 +14,11 @@
 	 - They look nicer.
 	 - Some back-end work.
  - Nino
-	 - It's an anti invite system for your server
-	 - You can find everything you need for nino in the `_nino` command
+	 - It's an anti invite system for your server. You can find everything you need for nino in the `_nino` command
  - Jumbo
-	 - Ever wanted bigger emojies? Now you can with the jumbo command.
-	 - Supports up the 5 emojie at once.
-	 - Gives info on emojies
-	 - Note: Only works on custom emojies
+	 - Ever wanted bigger emotes? Now you can with the jumbo command.
+	 - Supports up the 5 emotes at once, and gives info on emotes
+	 - Note: Only works on custom emotes
  - Settings
 	 - Guild settings are now a thing!
 	 - Settings allows you to blacklist channels and various other things you might want to change about the bot.
