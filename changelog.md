@@ -12,14 +12,14 @@
   - Pages
     - Most pages should now be smaller and a bit bettee fitting. Most will also have buttons!
   - Nino
-	  - It's an anti invite system for your server. You can find everything you need for nino in the `_nino` command
+    - It's an anti invite system for your server. You can find everything you need for nino in the `_nino` command
   - Jumbo
-	  - Ever wanted bigger emotes? Now you can with the jumbo command.
-	  - Supports up the 5 emotes at once, and gives info on emotes
-	  - Note: Only works on custom emotes
+    - Ever wanted bigger emotes? Now you can with the jumbo command.
+    - Supports up the 5 emotes at once, and gives info on emotes
+    - Note: Currently this only works on emotes, these are ones uploaded by guilds not the default ones. We will support emojis soon!
   - Settings
-	  - Guild settings are now a thing!
-	  - Settings allows you to blacklist channels and various other things you might want to change about the bot.
+    - Guild settings are now a thing!
+    - Settings allows you to blacklist channels and various other things you might want to change about the bot.
 
 ## Backend
   - Cleaned up a lot of messy code.
